@@ -22,7 +22,7 @@ export function HeartSvg({ size = 50, color = '#d7443e' }: any) {
 }
 
 export function HeartPNG() {
-  return (<><Image src="/heart-icon.png" alt="Heart" /></>);
+  return (<><Image src="/heart-icon.png" alt="Heart" width={50} height={50}/></>);
 }
 
 export function Heart({ heart, directionY = 'rise' }: any) {

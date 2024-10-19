@@ -34,7 +34,7 @@ export function Step2({ onStepChange, nextStep }) {
             // }else {
             //     setRotateY(rotateY + 1);
             // }
-            setRotateY(rotateY + 1);
+            // setRotateY(rotateY + 1);
         }, 3000);
     }, [rotateY]);
 
@@ -45,7 +45,7 @@ export function Step2({ onStepChange, nextStep }) {
                 <div className="rotate " style={{ '--rttY': rotateY } as CSSProperties}>
                     {imageList.map((image, index) => (
                         <div key={index} className={"panel image-" + index + ' '} style={{ '--i': index } as React.CSSProperties}>
-                            <Image src={image.url} alt={image.name} />
+                            <Image src={image.url} alt={image.name} width={1000} height={1000}/>
                         </div>
                     ))}
                 </div>
