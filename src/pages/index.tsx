@@ -4,6 +4,7 @@ import { Loading } from "../components/steps/Loading";
 import { StartStep } from "../components/steps/StartStep";
 import { Step2 } from '../components/steps/Step2';
 import { Step3 } from "../components/steps/Step3";
+import Head from 'next/head'
 
 export default function Home() {
   const _steps = [
@@ -26,7 +27,12 @@ export default function Home() {
     }, 1500);
   }
 
-  return (
+  return (<>
+    <Head>
+      <title>Happy Women's Day</title>
+      <meta property="og:title" content="Happy Women's Day" key="title" />
+      <link rel="icon" type="image/png" href="/icons/heart-3.png" />
+    </Head>
     <main>
       <div className={` font-[family-name:var(--font-geist-sans)]`}>
         <div className={"bg-gradient-to-br from-red-200 to-pink-200 w-screen h-screen overflow-hidden "}>
@@ -39,5 +45,6 @@ export default function Home() {
         </div>
       </div>
     </main>
+  </>
   );
 }
