@@ -1,0 +1,285 @@
+.typing-animation {
+    --typing-animation-delay: 0;
+
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    // border-right: 2px solid #7E2EA0;
+    animation: typing 3s steps(25, end), cursor .2s steps(25, end) infinite;
+    animation-delay: calc(var(--typing-animation-delay)* 1s);
+
+    @for $i from 1 through 20 {
+        &_delay-#{$i} {
+            --typing-animation-delay: #{$i};
+        }
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%;
+    }
+
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent
+    }
+}
+
+@for $i from 5 through 30 {
+    .animate__delay-#{$i}s {
+        animation-delay: #{$i}s;
+    }
+}
+
+/*
+* next step button
+*/
+.next-step-btn {
+    --fade-in-delay: 0;
+
+    -webkit-animation: next-step-btn-scale-pulse 3s ease-in-out 5s infinite, fade-in 3s ease-out calc(var(--fade-in-delay) * 1s) forwards;
+    animation: next-step-btn-scale-pulse 3s ease-in-out 5s infinite, fade-in 3s ease-out calc(var(--fade-in-delay) * 1s) forwards;
+
+    @for $i from 1 through 20 {
+        &.animation-fadein_delay-#{$i} {
+            --fade-in-delay: #{$i};
+        }
+    }
+    
+
+    .heart-fly-1 {
+        animation: heartFly-1 3s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+        -webkit-animation: heartFly-1 3s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+    }
+
+    .heart-fly-2 {
+        animation: heartFly-2 3s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+        -webkit-animation: heartFly-2 3s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+    }
+
+    .heart-fly-3 {
+        animation: heartFly-3 3s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+        -webkit-animation: heartFly-3 3s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+    }
+
+    .heart-fly-4 {
+        animation: heartFly-4 3s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+        -webkit-animation: heartFly-4 3s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+    }
+
+    .heart-fly-5 {
+        animation: heartFly-5 3s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+        -webkit-animation: heartFly-5 3s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+    }
+
+    .heart-fly-6 {
+        animation: heartFly-6 3s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+        -webkit-animation: heartFly-6 3s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+    }
+
+
+    @keyframes heartFly-1 {
+        0% {
+            opacity: 0;
+            transform: translate(0) rotate(0);
+        }
+
+        50% {
+            opacity: 1;
+            transform: translate(0, -25px) rotate(-20deg);
+        }
+    }
+
+    @-webkit-keyframes heartFly-1 {
+        0% {
+            opacity: 0;
+            transform: translate(0) rotate(0);
+        }
+
+        50% {
+            opacity: 1;
+            transform: translate(0, -25px) rotate(-20deg);
+        }
+    }
+
+    @keyframes heartFly-2 {
+        0% {
+            opacity: 0;
+            transform: translate(0) rotate(0) scale(0);
+        }
+
+        50% {
+            opacity: 0.9;
+            transform: translate(-10px, -40px) rotate(25deg) scale(1);
+        }
+    }
+
+    @-webkit-keyframes heartFly-2 {
+        0% {
+            opacity: 0;
+            transform: translate(0) rotate(0) scale(0);
+        }
+
+        50% {
+            opacity: 0.9;
+            transform: translate(-10px, -40px) rotate(25deg) scale(1);
+        }
+    }
+
+    @keyframes heartFly-3 {
+        0% {
+            opacity: 0;
+            transform: translate(0) rotate(0) scale(0);
+        }
+
+        50% {
+            opacity: 0.75;
+            transform: translate(10px, -43px) rotate(30deg) scale(0.7);
+        }
+    }
+
+    @-webkit-keyframes heartFly-3 {
+        0% {
+            opacity: 0;
+            transform: translate(0) rotate(0) scale(0);
+        }
+
+        50% {
+            opacity: 0.75;
+            transform: translate(10px, -43px) rotate(30deg) scale(0.7);
+        }
+    }
+
+    @keyframes heartFly-4 {
+        0% {
+            opacity: 0;
+            transform: translate(0) rotate(0) scale(0);
+        }
+
+        50% {
+            opacity: 0.75;
+            transform: translate(18px, -30px) rotate(55deg) scale(0.7);
+        }
+    }
+
+    @-webkit-keyframes heartFly-4 {
+        0% {
+            opacity: 0;
+            transform: translate(0) rotate(0) scale(0);
+        }
+
+        50% {
+            opacity: 0.75;
+            transform: translate(18px, -30px) rotate(55deg) scale(0.7);
+        }
+    }
+
+    @keyframes heartFly-5 {
+        0% {
+            opacity: 0;
+            transform: translate(0) rotate(0) scale(0);
+        }
+
+        50% {
+            opacity: 0.5;
+            transform: translate(0px, -55px) rotate(-40deg) scale(0.6);
+        }
+    }
+
+    @-webkit-keyframes heartFly-5 {
+        0% {
+            opacity: 0;
+            transform: translate(0) rotate(0) scale(0);
+        }
+
+        50% {
+            opacity: 0.5;
+            transform: translate(0px, -55px) rotate(-40deg) scale(0.6);
+        }
+    }
+
+    @keyframes heartFly-6 {
+        0% {
+            opacity: 0;
+            transform: translate(0) rotate(0) scale(0);
+        }
+
+        50% {
+            opacity: 0.5;
+            transform: translate(-13px, -62px) rotate(-25deg) scale(0.6);
+        }
+    }
+
+    @-webkit-keyframes heartFly-6 {
+        0% {
+            opacity: 0;
+            transform: translate(0) rotate(0) scale(0);
+        }
+
+        50% {
+            opacity: 0.5;
+            transform: translate(-13px, -62px) rotate(-25deg) scale(0.6);
+        }
+    }
+}
+
+@keyframes next-step-btn-scale-pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes next-step-btn-scale-pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.2;
+    }
+
+    40% {
+        opacity: 0.4;
+    }
+
+    60% {
+        opacity: 0.6;
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

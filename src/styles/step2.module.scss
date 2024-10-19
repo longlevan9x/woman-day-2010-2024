@@ -1,0 +1,105 @@
+// .holder {
+//     perspective: 2000px;
+//     perspective-origin: center;
+// }
+
+.rotate {
+    --rttY: 0;
+
+    position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(1100px) rotateY(calc(var(--rttY) * 36deg)) translateY(-60px);
+    transition: transform 0.7s;
+    width: 250px;
+    height: 200px;
+
+    .panel {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        transform: rotateY(calc(var(--i) * 36deg)) translateZ(550px);
+
+        &.filter-drop-shadow {
+            filter: drop-shadow(0 0 4px #ff3e60) drop-shadow(0 0 4px #ff3e60);
+        }
+
+        img {
+            // --_m: radial-gradient(#000 69%, #0000 70%) 84.5%/50%;
+            // clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+
+            width: 450px;
+            aspect-ratio: 1;
+            object-fit: cover;
+            --_m: radial-gradient(#000 69%, #0000 70%) 84.5%/50%;
+            -webkit-mask-box-image: var(--_m);
+            mask-border: var(--_m);
+            clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+            outline: 100vmax solid #ff3e60;
+
+            outline-color: #0000;
+            outline-offset: -100vmax;
+            transition: .7s;
+            cursor: pointer;
+
+        }
+    }
+
+    /* fallback until better support for mask-border */
+    @supports not (-webkit-mask-box-image: var(--_m)) {
+        .panel {
+            img {
+                --_m:
+                    radial-gradient(at 70% 31%, #000 29%, #0000 30%),
+                    radial-gradient(at 30% 31%, #000 29%, #0000 30%),
+                    linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+                -webkit-mask: var(--_m);
+                mask: var(--_m);
+            }
+        }
+    }
+}
+
+
+// .rotate {
+//     position: relative;
+//     transform-style: preserve-3d;
+//     transform: perspective(1500px) rotateY(0deg);
+//     transition: transform 0.7s;
+//     width: 200px;
+//     height: 200px;
+
+//     .panel {
+//         position: absolute;
+//         width: 100%;
+//         height: auto;
+//         top: 0;
+//         left: 0;
+//         transform: rotateY(calc(var(--i) * 36deg)) translateZ(400px);
+
+//         img {
+//             width: 450px;
+//             aspect-ratio: 1;
+//             object-fit: cover;
+//             --_m: radial-gradient(#000 69%, #0000 70%) 84.5%/50%;
+//             -webkit-mask-box-image: var(--_m);
+//             mask-border: var(--_m);
+//             clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+//         }
+//     }
+
+//     /* fallback until better support for mask-border */
+//     @supports not (-webkit-mask-box-image: var(--_m)) {
+//         .panel {
+//             img {
+//                 --_m:
+//                     radial-gradient(at 70% 31%, #000 29%, #0000 30%),
+//                     radial-gradient(at 30% 31%, #000 29%, #0000 30%),
+//                     linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+//                 -webkit-mask: var(--_m);
+//                 mask: var(--_m);
+//             }
+//         }
+//     }
+// }
