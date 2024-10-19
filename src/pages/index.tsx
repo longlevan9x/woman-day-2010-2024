@@ -36,8 +36,12 @@ export default function Home() {
       <meta name="description" content="Website for happy women's day and my love" />
       <meta name="author" content="Kivie" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta property="og:image" content="/icons/bigs/heart-1.png"></meta>
+      <meta property="og:image" content="https://happywomanday2010.vercel.app/icons/bigs/heart-1.png"></meta>
       <meta property="og:image:type" content="image/png" />
+      <meta
+        property="og:description"
+        content="Website for happy women's day and my love." />
+      <meta property="og:title" content="Happy Women's Day" />
     </Head>
     <main>
       <div className={` font-[family-name:var(--font-geist-sans)]`}>
