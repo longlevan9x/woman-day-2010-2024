@@ -29,7 +29,7 @@ export default function Home() {
 
   return (<>
     <Head>
-      <title>Happy Women's Day</title>
+      <title>Happy Women&apos;s Day</title>
       <meta property="og:title" content="Happy Women's Day" key="title" />
       <link rel="icon" type="image/png" href="/icons/heart-3.png" />
       <meta name="keywords" content="Happy, Women's Day, Happy Women's Day, My Love, Love u, Love You" />
