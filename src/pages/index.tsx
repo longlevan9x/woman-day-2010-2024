@@ -32,11 +32,12 @@ export default function Home() {
       <title>Happy Women's Day</title>
       <meta property="og:title" content="Happy Women's Day" key="title" />
       <link rel="icon" type="image/png" href="/icons/heart-3.png" />
-      <meta name="keywords" content="Happy, Women's Day, Happy Women's Day, My Love, Love u, Love You"/>
-      <meta name="description" content="Website for happy women's day and my love"/>
+      <meta name="keywords" content="Happy, Women's Day, Happy Women's Day, My Love, Love u, Love You" />
+      <meta name="description" content="Website for happy women's day and my love" />
       <meta name="author" content="Kivie" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta property="og:image" content="/icons/bigs/heart-1.png"></meta>
+      <meta property="og:image:type" content="image/png" />
     </Head>
     <main>
       <div className={` font-[family-name:var(--font-geist-sans)]`}>
