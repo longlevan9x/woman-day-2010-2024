@@ -1,5 +1,5 @@
 import { HeartModel } from "@/models/heart.model";
-import { getRandomNum, getRandomNumberInt } from "@/pages/utils/util";
+import { getRandomNum, getRandomNumberInt } from "@/utils/util";
 import { useState, useEffect } from "react";
 
 function HeartSvg({ size = 50, color = '#d7443e' }) {
