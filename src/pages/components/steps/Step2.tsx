@@ -2,6 +2,7 @@ import { ImageModel } from "@/pages/models/image.model";
 import { CSSProperties, useEffect, useState } from "react";
 import ParticleHeart from "../particles/Heart";
 import { NextButtonWithHeart } from "../buttons/NextButtonWithHeart";
+import Image from "next/image";
 
 export function Step2({ onStepChange, nextStep }) {
     const [imageList, setImageList] = useState([] as ImageModel[]);
@@ -44,7 +45,7 @@ export function Step2({ onStepChange, nextStep }) {
                 <div className="rotate " style={{ '--rttY': rotateY } as CSSProperties}>
                     {imageList.map((image, index) => (
                         <div key={index} className={"panel image-" + index + ' '} style={{ '--i': index } as React.CSSProperties}>
-                            <img src={image.url} alt={image.name} />
+                            <Image src={image.url} alt={image.name} />
                         </div>
                     ))}
                 </div>

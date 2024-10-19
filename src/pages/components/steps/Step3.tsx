@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { NextButtonWithHeart } from "../buttons/NextButtonWithHeart";
 import ParticleHearts from "../particles/Hearts";
 
@@ -12,7 +13,7 @@ export function Step3({ nextStep, onStepChange }) {
             <div className="step3 w-auto rounded-lg shadow-lg p-6">
                 <div className="flex justify-center flex-col items-center">
                     <div className="flex justify-center mb-4">
-                        <img className="animate__animated animate__pulse animate__infinite" src="/icons/bigs/heart-1.png" alt="Love"/>
+                        <Image className="animate__animated animate__pulse animate__infinite" src="/icons/bigs/heart-1.png" alt="Love"/>
                     </div>
                     <div className="">
                     <h1 className="text-5xl font-bold text-red-500 mb-4 typing-animation">Chúc mừng ngày 20/10</h1>

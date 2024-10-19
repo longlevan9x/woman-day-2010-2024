@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export function HeartSvg({ size = 50, color = '#d7443e' }: any) {
@@ -21,7 +22,7 @@ export function HeartSvg({ size = 50, color = '#d7443e' }: any) {
 }
 
 export function HeartPNG() {
-  return (<><img src="/heart-icon.png" alt="Heart" /></>);
+  return (<><Image src="/heart-icon.png" alt="Heart" /></>);
 }
 
 export function Heart({ heart, directionY = 'rise' }: any) {
