@@ -37,7 +37,11 @@ export default function Home() {
       <meta name="author" content="Kivie" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta property="og:image" content="https://happywomanday2010.vercel.app/icons/bigs/heart-1.png"></meta>
+      <meta property="og:image:url" content="https://happywomanday2010.vercel.app/icons/bigs/heart-1.png"></meta>
       <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="100"></meta>
+      <meta property="og:image:height" content="100"></meta>
+      <meta property="og:type" content="website" />
       <meta
         property="og:description"
         content="Website for happy women's day and my love." />
