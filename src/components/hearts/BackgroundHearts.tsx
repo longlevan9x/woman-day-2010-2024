@@ -1,4 +1,4 @@
-import { HeartModel } from "@/pages/models/heart.model";
+import { HeartModel } from "@/models/heart.model";
 import { getRandomNum, getRandomNumberInt } from "@/pages/utils/util";
 import { useState, useEffect } from "react";
 

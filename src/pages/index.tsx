@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { HeartSvg } from "./components/hearts/Heart";
-import { Loading } from "./components/steps/Loading";
-import { StartStep } from "./components/steps/StartStep";
-import { Step2 } from './components/steps/Step2';
-import { Step3 } from "./components/steps/Step3";
+import { HeartSvg } from "../components/hearts/Heart";
+import { Loading } from "../components/steps/Loading";
+import { StartStep } from "../components/steps/StartStep";
+import { Step2 } from '../components/steps/Step2';
+import { Step3 } from "../components/steps/Step3";
 
 export default function Home() {
   const _steps = [

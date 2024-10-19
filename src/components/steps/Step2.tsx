@@ -1,4 +1,4 @@
-import { ImageModel } from "@/pages/models/image.model";
+import { ImageModel } from "@/models/image.model";
 import { CSSProperties, useEffect, useState } from "react";
 import ParticleHeart from "../particles/Heart";
 import { NextButtonWithHeart } from "../buttons/NextButtonWithHeart";

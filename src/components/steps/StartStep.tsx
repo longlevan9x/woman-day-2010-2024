@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { HeartModel } from "@/pages/models/heart.model";
+import { HeartModel } from "@/models/heart.model";
 import { createHeartForCube, createHeartsForCube, createHeartsForRainFall } from "@/pages/utils/util";
 import { useState, useEffect } from "react";
 import { Heart } from "../hearts/Heart";
