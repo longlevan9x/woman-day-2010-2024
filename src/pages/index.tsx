@@ -13,7 +13,7 @@ export default function Home() {
     { name: 'Kỉ niệm' },
   ];
 
-  const [curStep, setCurStep] = useState(0);
+  const [curStep, setCurStep] = useState(2);
   const [steps, setSteps] = useState([]);
   const [closeClass, setCloseClass] = useState('');
   const [openClass, setOpenClass] = useState('');
