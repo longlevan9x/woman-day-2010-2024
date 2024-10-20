@@ -9,6 +9,12 @@ const nextConfig = {
         port: '',
         pathname: '**',
       },
+      {
+        protocol: 'https',
+        hostname: 'media-be.chewy.com',
+        port: '',
+        pathname: '**',
+      },
     ],
   }
 };
