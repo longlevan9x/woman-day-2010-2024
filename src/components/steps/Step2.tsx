@@ -34,7 +34,7 @@ export function Step2({ onStepChange, nextStep }) {
             // }else {
             //     setRotateY(rotateY + 1);
             // }
-            // setRotateY(rotateY + 1);
+            setRotateY(rotateY + 1);
         }, 3000);
     }, [rotateY]);
 
